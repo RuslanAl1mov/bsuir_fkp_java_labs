@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="LogInVbox" maxHeight="561.0" maxWidth="465.0" minHeight="400.0" minWidth="465.0" prefHeight="561.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.taxiBusiness.LogInWindow.controller.LoginWindowController">
+  <children>
+    <AnchorPane fx:id="LogInAnchorPlane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="561.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="setAdminBtn" layoutX="40.0" layoutY="94.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="385.0" text="Администратор">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="21.0" prefHeight="61.0" prefWidth="385.0" text="Автобаза">
+               <font>
+                  <Font name="Cambria" size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitBtn" layoutX="40.0" layoutY="500.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="92.0" text="Выход">
+               <font>
+                  <Font name="Bookman Old Style" size="15.0" />
+               </font>
+            </Button>
+            <ScrollPane layoutX="40.0" layoutY="171.0" prefHeight="318.0" prefWidth="385.0">
+               <content>
+                  <VBox fx:id="VBoxLayer" prefHeight="316.0" prefWidth="383.0" />
+               </content>
+            </ScrollPane>
+            <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="522.0" prefHeight="17.0" prefWidth="222.0" textFill="#b50000" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
