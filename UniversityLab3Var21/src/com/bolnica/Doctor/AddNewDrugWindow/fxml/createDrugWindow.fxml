@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="362.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bolnica.Doctor.AddNewDrugWindow.controller.AddNewDrugController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="120.0" layoutY="11.0" prefHeight="60.0" prefWidth="450.0" text="Добавить новое лекарство">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="456.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="goToMainAdminMenuBtn" layoutX="21.0" layoutY="25.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text=" Назад">
+               <font>
+                  <Font name="Gabriola" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="newDrugNameTextField" layoutX="62.0" layoutY="175.0" prefHeight="31.0" prefWidth="532.0">
+               <font>
+                  <Font name="Georgia" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="62.0" layoutY="130.0" prefHeight="31.0" prefWidth="170.0" text="Название лекарства">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveDrugBtn" layoutX="287.0" layoutY="269.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="307.0" text="Сохранить лекарство">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" layoutX="42.0" layoutY="291.0" prefHeight="17.0" prefWidth="197.0" textFill="#007512" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

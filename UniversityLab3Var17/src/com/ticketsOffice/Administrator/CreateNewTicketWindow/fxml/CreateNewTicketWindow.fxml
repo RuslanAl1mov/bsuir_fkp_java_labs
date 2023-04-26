@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="742.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ticketsOffice.Administrator.CreateNewTicketWindow.controller.CreateNewTicketController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Line endX="452.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="goToMainMenuBtn" layoutX="26.0" layoutY="25.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="66.0" text="Назад">
+               <font>
+                  <Font name="Gabriola" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="108.0" layoutY="11.0" prefHeight="53.0" prefWidth="443.0" text="Создание Путевки">
+               <font>
+                  <Font name="Georgia" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusLabel" alignment="CENTER" layoutX="29.0" layoutY="513.0" prefHeight="24.0" prefWidth="588.0" textFill="#008314">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="130.0" prefHeight="40.0" prefWidth="520.0" text="Название путевки:">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ticketNameTextField" layoutX="60.0" layoutY="174.0" prefHeight="40.0" prefWidth="518.0">
+               <font>
+                  <Font name="Georgia" size="23.0" />
+               </font>
+            </TextField>
+            <Label layoutX="58.0" layoutY="242.0" prefHeight="40.0" prefWidth="219.0" text="Тип путевки:">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="ticketTypeChoiceBox" layoutX="58.0" layoutY="285.0" prefHeight="40.0" prefWidth="221.0" />
+            <TextField fx:id="daysNumberTextField" layoutX="350.0" layoutY="282.0" prefHeight="40.0" prefWidth="210.0">
+               <font>
+                  <Font name="Georgia" size="23.0" />
+               </font>
+            </TextField>
+            <Label layoutX="350.0" layoutY="242.0" prefHeight="40.0" prefWidth="209.0" text="Кол-во дней:">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ticketCostTextField" layoutX="60.0" layoutY="426.0" prefHeight="40.0" prefWidth="210.0">
+               <font>
+                  <Font name="Georgia" size="23.0" />
+               </font>
+            </TextField>
+            <Label layoutX="60.0" layoutY="386.0" prefHeight="40.0" prefWidth="209.0" text="Цена путевки:">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="createTicketBtn" layoutX="145.0" layoutY="622.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="382.0" text="Создать путевку">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="LogInVbox" maxHeight="400.0" maxWidth="640.0" minHeight="400.0" minWidth="640.0" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bolnica.LogInWindow.controller.LoginWindowController">
+  <children>
+    <AnchorPane fx:id="LogInAnchjrPlane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="setDoctorBtn" layoutX="231.0" layoutY="128.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="179.0" text="Врач">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="23.0" prefHeight="61.0" prefWidth="393.0" text="Больница">
+               <font>
+                  <Font name="Cambria" size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="setPatientBtn" layoutX="231.0" layoutY="225.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="179.0" text="Пациент">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="26.0" layoutY="337.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="92.0" text="Выход">
+               <font>
+                  <Font name="Bookman Old Style" size="15.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

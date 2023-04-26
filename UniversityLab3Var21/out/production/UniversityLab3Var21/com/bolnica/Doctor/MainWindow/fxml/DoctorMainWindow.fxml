@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="742.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bolnica.Doctor.MainWindow.controler.DoctorMainMenuController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="adminWindowTitleLabel" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="311.0" text="Врач">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="249.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="createNewDragBtn" layoutX="67.0" layoutY="229.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="299.0" text="Добавить новое лекарство">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="prescribeTreatmentBtn" layoutX="67.0" layoutY="319.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="299.0" text="Назначить лечение">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="patientsListBtn" layoutX="67.0" layoutY="411.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="299.0" text="Список пациентов">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="67.0" layoutY="623.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="299.0" text="Выход">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginBtn" layoutX="324.0" layoutY="29.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="66.0" text="Log in">
+               <font>
+                  <Font name="Gabriola" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="adminMenuTitleLabel" alignment="CENTER" layoutX="66.0" layoutY="166.0" prefHeight="41.0" prefWidth="291.0" text="Меню">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

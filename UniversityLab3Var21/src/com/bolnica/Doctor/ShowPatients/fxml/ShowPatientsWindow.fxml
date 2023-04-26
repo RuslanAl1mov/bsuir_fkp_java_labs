@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="742.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bolnica.Doctor.ShowPatients.controller.ShowPatientsController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Line endX="856.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="goToMainMenuBtn" layoutX="26.0" layoutY="25.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="66.0" text="Назад">
+               <font>
+                  <Font name="Gabriola" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="108.0" layoutY="11.0" prefHeight="53.0" prefWidth="844.0" text="Список Пациентов">
+               <font>
+                  <Font name="Georgia" size="32.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="32.0" layoutY="129.0" prefHeight="518.0" prefWidth="439.0">
+               <content>
+                  <VBox fx:id="patientsVBoxLayer" prefHeight="516.0" prefWidth="437.0" />
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="42.0" layoutY="94.0" prefHeight="31.0" prefWidth="210.0" text="Имя пациента">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusLineLabel" alignment="CENTER" layoutX="57.0" layoutY="435.0" prefHeight="17.0" prefWidth="317.0" textFill="#00b90c">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="294.0" layoutY="94.0" prefHeight="31.0" prefWidth="161.0" text="Статус">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="557.0" layoutY="154.0" prefHeight="378.0" prefWidth="439.0">
+               <content>
+                  <VBox fx:id="drugsVBoxLayer" prefHeight="375.0" prefWidth="437.0" />
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="564.0" layoutY="91.0" prefHeight="31.0" prefWidth="429.0" text="Лекарства пациента">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="557.0" layoutY="539.0" prefHeight="31.0" prefWidth="439.0" text="Выбранный пациент:">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="559.0" layoutY="577.0" prefHeight="31.0" prefWidth="66.0" text="Имя:">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="562.0" layoutY="608.0" prefHeight="31.0" prefWidth="102.0" text="Фамилия:">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="562.0" layoutY="639.0" prefHeight="31.0" prefWidth="161.0" text="Кол-во лекарств:">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="562.0" layoutY="670.0" prefHeight="31.0" prefWidth="75.0" text="Статус:">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="patientFirstNameLabel" layoutX="625.0" layoutY="577.0" prefHeight="31.0" prefWidth="379.0">
+               <font>
+                  <Font name="Georgia Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="patientSecondNameLabel" layoutX="664.0" layoutY="608.0" prefHeight="31.0" prefWidth="337.0">
+               <font>
+                  <Font name="Georgia Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="drugsNumberLabel" layoutX="723.0" layoutY="639.0" prefHeight="31.0" prefWidth="287.0">
+               <font>
+                  <Font name="Georgia Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="patientStatusLabel" layoutX="643.0" layoutY="670.0" prefHeight="31.0" prefWidth="359.0">
+               <font>
+                  <Font name="Georgia Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="557.0" layoutY="122.0" prefHeight="31.0" prefWidth="161.0" text="Название">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="734.0" layoutY="122.0" prefHeight="31.0" prefWidth="262.0" text="Имя выполняющего">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="vipizditBtn" layoutX="31.0" layoutY="658.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="439.0" text="Выписать">
+               <font>
+                  <Font name="Georgia" size="27.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
