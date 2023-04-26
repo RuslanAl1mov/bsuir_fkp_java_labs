@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label fx:id="titleLabel" alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="12.0" layoutY="6.0" prefHeight="46.0" prefWidth="585.0" text="Client">
+               <font>
+                  <Font name="Century" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Button fx:id="connectionBtn" layoutX="71.0" layoutY="85.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Connect">
+               <font>
+                  <Font name="Dubai Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="hostLabel" layoutX="248.0" layoutY="63.0" prefHeight="25.0" prefWidth="35.0" text="Host">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="hostTextField" alignment="CENTER" layoutX="196.0" layoutY="92.0" prefHeight="27.0" prefWidth="133.0" text="127.0.0.1">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="portLabel" layoutX="409.0" layoutY="63.0" prefHeight="25.0" prefWidth="35.0" text="Port">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portTextField" alignment="CENTER" layoutX="357.0" layoutY="91.0" prefHeight="27.0" prefWidth="133.0" text="1024">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="sendDataLabel" alignment="CENTER" layoutX="12.0" layoutY="194.0" prefHeight="38.0" prefWidth="585.0" text="Sending data (Введите значения в ячейки)" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="connectionStatus" alignment="CENTER" layoutX="12.0" layoutY="135.0" prefHeight="20.0" prefWidth="585.0" text="Disonnected" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="sendDataBtn" layoutX="168.0" layoutY="425.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="274.0" text="COUNT">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Num1" alignment="CENTER" layoutX="107.0" layoutY="250.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num2" alignment="CENTER" layoutX="170.0" layoutY="250.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num3" alignment="CENTER" layoutX="236.0" layoutY="250.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num4" alignment="CENTER" layoutX="106.0" layoutY="301.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num5" alignment="CENTER" layoutX="169.0" layoutY="301.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num6" alignment="CENTER" layoutX="235.0" layoutY="301.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num7" alignment="CENTER" layoutX="105.0" layoutY="353.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num8" alignment="CENTER" layoutX="168.0" layoutY="353.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Num9" alignment="CENTER" layoutX="234.0" layoutY="353.0" prefHeight="39.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="301.0" prefHeight="38.0" prefWidth="60.0" text="=">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="answerField" layoutX="363.0" layoutY="301.0" prefHeight="46.0" prefWidth="147.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="399.0" prefHeight="20.0" prefWidth="408.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

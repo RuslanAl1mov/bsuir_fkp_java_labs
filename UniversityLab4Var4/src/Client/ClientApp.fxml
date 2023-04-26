@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="500.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="47.0" layoutY="6.0" prefHeight="46.0" prefWidth="585.0" text="Client">
+               <font>
+                  <Font name="Century" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Button fx:id="connectionBtn" layoutX="106.0" layoutY="85.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Connect">
+               <font>
+                  <Font name="Dubai Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="283.0" layoutY="63.0" prefHeight="25.0" prefWidth="35.0" text="Host">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="hostTextField" alignment="CENTER" layoutX="231.0" layoutY="92.0" prefHeight="27.0" prefWidth="133.0" text="127.0.0.1">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="444.0" layoutY="63.0" prefHeight="25.0" prefWidth="35.0" text="Port">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portTextField" alignment="CENTER" layoutX="392.0" layoutY="91.0" prefHeight="27.0" prefWidth="133.0" text="1024">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="41.0" layoutY="186.0" prefHeight="38.0" prefWidth="585.0" text="Sending data (Введите значения в ячейки)" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="connectionStatus" alignment="CENTER" layoutX="47.0" layoutY="135.0" prefHeight="20.0" prefWidth="585.0" text="Disonnected" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="sendDataBtn" layoutX="479.0" layoutY="229.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="120.0" text="Искать">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="271.0" prefHeight="27.0" prefWidth="317.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dataTextField" layoutX="219.0" layoutY="228.0" prefHeight="39.0" prefWidth="245.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="59.0" layoutY="234.0" prefHeight="27.0" prefWidth="147.0" text="Слово для поиска:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="answerTextArea" layoutX="31.0" layoutY="319.0" prefHeight="161.0" prefWidth="620.0" text="&#10;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="25.0" layoutY="284.0" prefHeight="27.0" prefWidth="147.0" text="Результаты поиска:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

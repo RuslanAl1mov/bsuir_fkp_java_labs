@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="503.0" layoutY="36.0" prefHeight="7.0" prefWidth="79.0" text="Client">
+               <font>
+                  <Font name="Century" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Button fx:id="connectionBtn" layoutX="51.0" layoutY="36.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="100.0" text="Connect">
+               <font>
+                  <Font name="Dubai Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="232.0" layoutY="11.0" prefHeight="25.0" prefWidth="35.0" text="Host">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="hostTextField" alignment="CENTER" layoutX="180.0" layoutY="40.0" prefHeight="27.0" prefWidth="133.0" text="127.0.0.1">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="393.0" layoutY="11.0" prefHeight="25.0" prefWidth="35.0" text="Port">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portTextField" alignment="CENTER" layoutX="341.0" layoutY="39.0" prefHeight="27.0" prefWidth="133.0" text="1024">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="connectionStatus" alignment="CENTER" layoutX="-4.0" layoutY="76.0" prefHeight="20.0" prefWidth="585.0" text="Disonnected" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="sendDataBtn" layoutX="26.0" layoutY="456.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="550.0" text="Отправить">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="399.0" prefHeight="20.0" prefWidth="408.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="messageToSendTextField" layoutX="27.0" layoutY="408.0" prefHeight="38.0" prefWidth="550.0" promptText="Сообщение" />
+            <ScrollPane layoutX="27.0" layoutY="103.0" prefHeight="296.0" prefWidth="550.0">
+               <content>
+                  <VBox fx:id="VBoxLayout" prefHeight="294.0" prefWidth="548.0" />
+               </content>
+            </ScrollPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
