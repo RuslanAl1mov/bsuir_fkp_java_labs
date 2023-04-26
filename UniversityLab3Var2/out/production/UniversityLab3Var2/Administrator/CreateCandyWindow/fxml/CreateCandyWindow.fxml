@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="742.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.CreateCandyWindow.controller.CreateCandyController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="742.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="137.0" layoutY="14.0" prefHeight="60.0" prefWidth="463.0" text="Добавить новую конфету">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="448.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="goToMainAdminMenuBtn" layoutX="21.0" layoutY="25.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text=" Назад">
+               <font>
+                  <Font name="Gabriola" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="candyNameTextField" layoutX="51.0" layoutY="158.0" prefHeight="31.0" prefWidth="532.0">
+               <font>
+                  <Font name="Georgia" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="53.0" layoutY="125.0" prefHeight="31.0" prefWidth="170.0" text="Название конфеты">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="candySugarTextField" layoutX="51.0" layoutY="255.0" prefHeight="31.0" prefWidth="236.0">
+               <font>
+                  <Font name="Georgia" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="53.0" layoutY="220.0" prefHeight="31.0" prefWidth="170.0" text="Кол-во сахара">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="candyWeightTextField" layoutX="348.0" layoutY="255.0" prefHeight="31.0" prefWidth="236.0">
+               <font>
+                  <Font name="Georgia" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="350.0" layoutY="220.0" prefHeight="31.0" prefWidth="170.0" text="Вес конфеты">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="31.0" layoutY="686.0" prefHeight="31.0" prefWidth="532.0" textFill="RED">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveCandyBtn" layoutX="264.0" layoutY="613.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="307.0" text="Сохранить цветок">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="259.0" fitWidth="505.0" layoutX="158.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/image.png" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

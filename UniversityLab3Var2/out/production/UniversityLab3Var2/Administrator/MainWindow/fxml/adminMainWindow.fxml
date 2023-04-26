@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="742.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.MainWindow.controller.AdminMainMenuController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="14.0" prefHeight="60.0" prefWidth="364.0" text="Администратор">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="236.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="createNewCandyBtn" layoutX="67.0" layoutY="194.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Добавить новую конфету">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="createPresentBtn" layoutX="67.0" layoutY="284.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Создать подарок">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="candiesListBtn" layoutX="67.0" layoutY="376.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Список конфет">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="66.0" layoutY="624.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Выход">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="66.0" layoutY="131.0" prefHeight="41.0" prefWidth="291.0" text="Меню">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="presentsListBtn" layoutX="67.0" layoutY="459.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Список подарков">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
