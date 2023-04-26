@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="742.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Administrator.MainWindow.AdminMainMenuController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="997.0" text="Администратор">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="856.0" layoutX="152.0" layoutY="74.0" startX="-127.0" />
+            <Button fx:id="createNewStoneBtn" layoutX="67.0" layoutY="229.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Добавить новый камень">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="createNecklaceBtn" layoutX="67.0" layoutY="319.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Создать ожерелье">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="necklacesListBtn" layoutX="67.0" layoutY="411.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Список ожерельев">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="53.0" layoutY="624.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="291.0" text="Выход">
+               <font>
+                  <Font name="Gabriola" size="29.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="173.0" fitWidth="301.0" layoutX="673.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/stone.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="66.0" layoutY="166.0" prefHeight="41.0" prefWidth="291.0" text="Меню">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="221.0" layoutX="495.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/brilliant-clip-art-32.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="189.0" fitWidth="220.0" layoutX="731.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sapphire-clip-art-4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="173.0" fitWidth="301.0" layoutX="470.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/brilliant-clip-art-20.png" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
