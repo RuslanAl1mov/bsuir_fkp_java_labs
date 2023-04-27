@@ -10,7 +10,7 @@
 ### Буду благодарен, если подпишитесь на мой Git:
 ![image](https://user-images.githubusercontent.com/78092726/234711667-7f6c8f5d-8a3e-4c3e-8b32-a872dbdba494.png)
 
-### Или поставьте 🌟
+### Или поставите 🌟
 ![image](https://user-images.githubusercontent.com/78092726/234820280-d49618d0-8895-4b10-a62e-c47f8d2b9f78.png)
 
 
